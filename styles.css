@@ -120,12 +120,21 @@ a:hover {
   color: var(--accent);
 }
 
+.tabs a.is-active {
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--accent);
+}
+
 .site-main {
   padding-top: 2rem;
 }
 
 .panel {
   padding: 1.1rem 1.1rem 1.6rem;
+}
+
+.narrow-panel {
+  max-width: 980px;
 }
 
 .home-panel {
