@@ -11,189 +11,150 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="brand">
-        <span class="brand-kicker">Personal Website</span>
-        <h1>Shafique Islam</h1>
-        <p class="lead">PhD Student (3rd year), Department of Economics, University of Pittsburgh</p>
-      </div>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <h1>Shafique Islam</h1>
+      <form class="search-shell" action="#research">
+        <input type="search" name="q" placeholder="Search">
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero-card" id="about">
-        <div class="hero-copy">
-          <p class="section-label">About</p>
-          <h2>Economics, policy, and applied research</h2>
-          <p>
-            I am a third-year PhD student in Economics at the University of Pittsburgh.
-            My fields of interest are labor economics, development economics, public economics,
-            and applied econometrics.
-          </p>
-          <p>
-            Before starting my PhD, I completed an MA in Economics at Central Michigan University
-            and earned both my MSS and BSS in Economics from the University of Dhaka. My work
-            combines policy-focused economic questions with empirical analysis using large-scale,
-            text, and time-series data.
-          </p>
+  <div class="page-shell">
+    <nav class="tabs" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
+    </nav>
+
+    <main class="site-main">
+      <section class="panel home-panel" id="home">
+        <div class="home-copy">
+          <h2>Shafique Islam</h2>
+          <p class="contact-line">PhD Student, Department of Economics, University of Pittsburgh</p>
+          <p class="contact-line">Email: <a href="mailto:shafique.islam@pitt.edu">shafique.islam@pitt.edu</a></p>
+          <p class="contact-line">Phone: <a href="tel:+19898245480">(+1) 989-824-5480</a></p>
+
+          <h3>Fields</h3>
+          <p>Labor Economics, Development Economics, Public Economics, Applied Econometrics</p>
+
+          <h3>Current Appointment</h3>
+          <p>PhD Student in Economics, University of Pittsburgh, 2023-Present</p>
+
+          <h3>Education</h3>
+          <p>PhD in Economics, University of Pittsburgh, 2023-Present</p>
+          <p>MA in Economics, Central Michigan University, 2023</p>
+          <p>MSS in Economics, University of Dhaka, 2015</p>
+          <p>BSS in Economics, University of Dhaka, 2014</p>
         </div>
-        <aside class="profile-card" aria-label="Profile details">
+
+        <div class="home-photo">
           <img
-            class="portrait-image"
             src="20230829_JW_6033_ShafiqulIslam_0002.jpeg.avif"
             alt="Portrait of Shafique Islam"
           >
-          <dl>
-            <div>
-              <dt>Affiliation</dt>
-              <dd>University of Pittsburgh</dd>
-            </div>
-            <div>
-              <dt>Program</dt>
-              <dd>PhD in Economics</dd>
-            </div>
-            <div>
-              <dt>Year</dt>
-              <dd>Third Year</dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:shafique.islam@pitt.edu">shafique.islam@pitt.edu</a></dd>
-            </div>
-            <div>
-              <dt>Phone</dt>
-              <dd><a href="tel:+19898245480">(+1) 989-824-5480</a></dd>
-            </div>
-          </dl>
-        </aside>
+        </div>
       </section>
 
-      <section class="content-grid" id="research">
-        <article class="content-card">
-          <p class="section-label">Research Interests</p>
-          <ul class="clean-list">
-            <li>Labor Economics</li>
-            <li>Development Economics</li>
-            <li>Public Economics</li>
-            <li>Applied Econometrics</li>
+      <section class="panel" id="about">
+        <div class="intro-text">
+          <p>
+            I am a third-year PhD student in Economics at the University of Pittsburgh. My research
+            focuses on labor economics, development economics, public economics, and applied econometrics.
+          </p>
+          <p>
+            Before starting my PhD, I completed an MA in Economics at Central Michigan University
+            and earned both my MSS and BSS in Economics from the University of Dhaka. I have also
+            taught economics courses at the University of Pittsburgh, Central Michigan University,
+            and Noakhali Science and Technology University.
+          </p>
+          <p>
+            My broader work combines policy-oriented economic questions with empirical analysis using
+            large-scale datasets, text data, and time-series methods.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel" id="research">
+        <p class="section-intro">
+          Below you can find my current working paper, ongoing research, and selected publications.
+          My CV contains a fuller record of research, teaching, and previous experience.
+        </p>
+
+        <hr class="divider">
+
+        <h2 class="section-heading">Working Paper</h2>
+        <article class="research-entry">
+          <p>
+            <span class="paper-title">Delivering Degrees: Positive Educational Spillovers from Amazon's Logistics Expansion</span>
+            <span class="paper-status">Working paper.</span>
+            <a class="paper-link" href="#" title="Replace this placeholder with your paper URL or PDF file">[paper link]</a>
+          </p>
+          <ul>
+            <li>
+              This paper examines how Amazon fulfillment center expansion affects local educational
+              attainment across U.S. commuting zones between 2010 and 2023.
+            </li>
+            <li>
+              The results suggest positive effects on bachelor's and master's degree attainment through
+              changes in returns to schooling, technology spillovers, and selective in-migration.
+            </li>
+            <li>
+              Submitted to the Society of Labor Economists (SOLE) Conference.
+            </li>
           </ul>
         </article>
 
-        <article class="content-card">
-          <p class="section-label">Education</p>
-          <div class="item-block">
-            <h3>University of Pittsburgh</h3>
-            <p>PhD in Economics, 2023-Present</p>
-          </div>
-          <div class="item-block">
-            <h3>Central Michigan University</h3>
-            <p>MA in Economics, 2023</p>
-          </div>
-          <div class="item-block">
-            <h3>University of Dhaka</h3>
-            <p>MSS in Economics, 2015; BSS in Economics, 2014</p>
-          </div>
-        </article>
-      </section>
-
-      <section class="content-card">
-        <p class="section-label">Working Papers</p>
-        <div class="item-block">
-          <h3>Delivering Degrees: Positive Educational Spillovers from Amazon's Logistics Expansion</h3>
+        <h2 class="section-heading">Work In Progress</h2>
+        <article class="research-entry">
           <p>
-            This paper studies how Amazon fulfillment center expansion affects local educational
-            attainment across U.S. commuting zones between 2010 and 2023. The findings suggest
-            positive effects on bachelor's and master's degree attainment through changes in returns
-            to schooling, technology spillovers, and selective in-migration.
-          </p>
-          <p>
-            This paper was submitted to the Society of Labor Economists (SOLE) Conference.
-          </p>
-        </div>
-        <div class="item-block">
-          <h3>Work In Progress</h3>
-          <p>
-            Sampling into Significance: How Random Are Results in Economics Research?
+            <span class="paper-title">Sampling into Significance: How Random Are Results in Economics Research?</span>
             With Sonia Ale, Lester Lusher, Huda Osman, and Jacob Stenstrom.
           </p>
-        </div>
-      </section>
-
-      <section class="content-grid">
-        <article class="content-card">
-          <p class="section-label">Teaching</p>
-          <div class="item-block">
-            <h3>University of Pittsburgh</h3>
-            <p>Teaching Assistant for Introduction to Microeconomics: Fall 2024, Spring 2025, Fall 2025.</p>
-          </div>
-          <div class="item-block">
-            <h3>Current Teaching</h3>
-            <p>Teaching Assistant for Introduction to Macroeconomics: Spring 2026.</p>
-          </div>
-          <div class="item-block">
-            <h3>Previous Academic Appointments</h3>
-            <p>
-              Graduate Teaching Assistant at Central Michigan University, and previously Assistant
-              Professor and Lecturer at Noakhali Science and Technology University in Bangladesh.
-            </p>
-          </div>
+          <ul>
+            <li>Presented at Case Western Reserve University, December 2025.</li>
+          </ul>
         </article>
 
-        <article class="content-card" id="cv">
-          <p class="section-label">CV</p>
-          <p>
-            Download my current curriculum vitae below.
-          </p>
-          <a class="button-link" href="Shafique_Islam_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-        </article>
-      </section>
-
-      <section class="content-card">
-        <p class="section-label">Selected Publications</p>
-        <div class="item-block">
+        <h2 class="section-heading">Selected Publications</h2>
+        <article class="research-entry">
           <p>
             Ale, S. A., and Islam, S. (2022). A panel data analysis of infrastructure, human capital
             development, and economic growth: Evidence from ten newly industrialized countries.
           </p>
-        </div>
-        <div class="item-block">
+        </article>
+        <article class="research-entry">
           <p>
             Ale, S. A., and Islam, S. (2022). Does external debt affect economic growth? Evidence from
             South Asian countries.
           </p>
-        </div>
-        <div class="item-block">
+        </article>
+        <article class="research-entry">
           <p>
             Ale, S. A., Akter, R., and Islam, S. (2018). Remittance inflow and GDP growth: Evidence
             from Bangladesh, India, and Pakistan.
           </p>
+        </article>
+      </section>
+
+      <section class="panel cv-panel" id="cv">
+        <div class="cv-download">
+          <div class="pdf-icon" aria-hidden="true">PDF</div>
+          <div>
+            <p class="cv-title">Shafique Islam CV</p>
+            <a class="cv-link" href="Shafique_Islam_CV.pdf" target="_blank" rel="noopener noreferrer">Download File</a>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer" id="contact">
-      <div>
-        <p class="section-label">Contact</p>
-        <p>Shafique Islam</p>
-        <p>Department of Economics, University of Pittsburgh</p>
-        <p><a href="mailto:shafique.islam@pitt.edu">shafique.islam@pitt.edu</a></p>
-      </div>
-      <p class="footer-note">
-        Pittsburgh, PA. Languages: English and Bengali.
-      </p>
-    </footer>
   </div>
 </body>
 </html>
