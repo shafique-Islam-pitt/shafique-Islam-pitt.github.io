@@ -33,7 +33,9 @@ a:hover {
 
 .masthead {
   min-height: 305px;
-  background: #ffffff;
+  background:
+    linear-gradient(rgba(19, 22, 28, 0.28), rgba(19, 22, 28, 0.28)),
+    url("cover%20Photo.jpeg") center/cover no-repeat;
   border-bottom: 1px solid #e7ecf0;
 }
 
@@ -77,6 +79,35 @@ a:hover {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.search-shell {
+  position: absolute;
+  top: 3.35rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.search-shell input {
+  width: 170px;
+  height: 31px;
+  padding: 0 10px;
+  border: 1px solid #888888;
+  background: rgba(255, 255, 255, 0.96);
+  font: inherit;
+}
+
+.search-shell button {
+  height: 31px;
+  padding: 0 12px;
+  border: 1px solid #777777;
+  border-left: 0;
+  background: #6c6c6c;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
 }
 
 .page-shell {
@@ -270,6 +301,11 @@ a:hover {
     margin-bottom: 1rem;
   }
 
+  .search-shell {
+    position: static;
+    margin-bottom: 1rem;
+  }
+
   .hero-title,
   .hero-title-small {
     position: static;
@@ -284,7 +320,7 @@ body.home-landing .masthead {
   border-bottom: 0;
   background:
     linear-gradient(rgba(19, 22, 28, 0.34), rgba(19, 22, 28, 0.34)),
-    url("WhatsApp%20Image%202026-04-16%20at%2015.22.54.jpeg") center/cover no-repeat;
+    url("cover%20Photo.jpeg") center/cover no-repeat;
 }
 
 body.home-landing .masthead-inner {
