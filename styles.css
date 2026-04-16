@@ -1,10 +1,10 @@
 :root {
-  --ink: #202225;
+  --ink: #1f2530;
   --muted: #4e5868;
   --line: #d8dde5;
-  --panel: #6f8393;
-  --accent: #202225;
-  --accent-soft: rgba(32, 34, 37, 0.08);
+  --panel: #eef4f4;
+  --accent: #6a63b6;
+  --accent-soft: rgba(106, 99, 182, 0.14);
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -32,9 +32,9 @@ a:hover {
 }
 
 .masthead {
-  min-height: 300px;
+  min-height: 305px;
   background: #ffffff;
-  border-bottom: 0;
+  border-bottom: 1px solid #e7ecf0;
 }
 
 .masthead-inner,
@@ -45,47 +45,29 @@ a:hover {
 
 .masthead-inner {
   position: relative;
-  min-height: 300px;
+  min-height: 305px;
   padding: 0.8rem 0 0;
 }
 
 .hero-title {
   position: absolute;
   left: 50%;
-  top: 58%;
+  top: 48%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .hero-title-small {
-  top: 58%;
+  top: 54%;
 }
 
 .masthead h1 {
   margin: 0;
-  color: #222222;
+  color: #171b23;
   font-family: "Source Sans 3", sans-serif;
-  font-size: clamp(3.2rem, 7vw, 4.7rem);
+  font-size: clamp(3.4rem, 7vw, 5.1rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-
-.site-wordmark {
-  position: absolute;
-  left: -420px;
-  top: -126px;
-  margin: 0;
-  color: #202225;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.hero-rule {
-  width: min(58vw, 730px);
-  height: 12px;
-  margin: 0.85rem auto 0;
-  background: #718594;
 }
 
 .top-nav {
@@ -93,7 +75,7 @@ a:hover {
   top: 0.5rem;
   right: 0;
   display: flex;
-  gap: 0.7rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -102,26 +84,24 @@ a:hover {
 }
 
 .top-nav a {
-  color: #2b2f33;
-  font-size: 1.05rem;
+  color: #4d5667;
+  font-size: 1.15rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.55rem 0.85rem;
+  padding: 0;
 }
 
 .top-nav a:hover,
 .top-nav a.is-active {
-  color: #ffffff;
-  background: #222222;
-  text-decoration: none;
+  color: var(--accent);
 }
 
 .site-main {
-  padding-top: 0;
+  padding-top: 1.45rem;
 }
 
 .panel {
-  padding: 1.75rem 1.65rem 2rem;
+  padding: 1.9rem 1.65rem 2rem;
 }
 
 .narrow-panel {
@@ -130,20 +110,19 @@ a:hover {
 
 .home-panel {
   display: grid;
-  grid-template-columns: 430px 1fr;
-  gap: 2.1rem;
+  grid-template-columns: 360px 1fr;
+  gap: 2rem;
   align-items: start;
   background: var(--panel);
-  border: 0;
+  border: 1px solid #e4ebed;
 }
 
 .home-copy h2 {
   margin: 0 0 0.5rem;
-  color: #ffffff;
-  font-size: 4rem;
+  color: #3b4350;
+  font-size: 1.95rem;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1;
 }
 
 .home-copy p,
@@ -151,29 +130,29 @@ a:hover {
 .section-intro,
 .intro-text p {
   margin: 0 0 0.85rem;
-  color: #ffffff;
-  font-size: 1.02rem;
-  line-height: 1.45;
+  color: #444444;
+  font-size: 1.05rem;
+  line-height: 1.55;
 }
 
 .welcome-copy {
-  padding-top: 0.8rem;
+  padding-top: 0;
 }
 
 .welcome-copy p {
-  max-width: 690px;
-  font-size: 0.98rem;
+  max-width: none;
+  font-size: 1.05rem;
 }
 
 .welcome-copy p + p {
-  margin-top: 1.35rem;
+  margin-top: 0;
 }
 
 .home-photo img {
   width: 100%;
-  max-width: 430px;
+  max-width: 370px;
   display: block;
-  border: 0;
+  border: 1px solid #d7d7d7;
 }
 
 .divider {
@@ -187,7 +166,7 @@ a:hover {
   color: #444444;
   font-size: 1.2rem;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .paper-title {
@@ -200,7 +179,7 @@ a:hover {
 
 .paper-link,
 .cv-link {
-  color: #4f6170;
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -251,11 +230,11 @@ a:hover {
 
 @media (max-width: 900px) {
   .masthead {
-    min-height: 220px;
+    min-height: 230px;
   }
 
   .masthead-inner {
-    min-height: 220px;
+    min-height: 230px;
   }
 
   .home-panel {
@@ -269,11 +248,11 @@ a:hover {
 
 @media (max-width: 640px) {
   .masthead {
-    min-height: 200px;
+    min-height: 190px;
   }
 
   .masthead-inner {
-    min-height: 200px;
+    min-height: 190px;
   }
 
   .top-nav {
@@ -290,13 +269,131 @@ a:hover {
     text-align: left;
     padding-top: 1rem;
   }
+}
 
-  .site-wordmark {
+body.home-landing .masthead {
+  min-height: 300px;
+  border-bottom: 0;
+}
+
+body.home-landing .masthead-inner {
+  min-height: 300px;
+}
+
+body.home-landing .top-nav {
+  gap: 0.7rem;
+}
+
+body.home-landing .top-nav a {
+  color: #2b2f33;
+  font-size: 1.05rem;
+  padding: 0.55rem 0.85rem;
+}
+
+body.home-landing .top-nav a:hover,
+body.home-landing .top-nav a.is-active {
+  color: #ffffff;
+  background: #222222;
+  text-decoration: none;
+}
+
+body.home-landing .hero-title {
+  top: 58%;
+}
+
+body.home-landing .masthead h1 {
+  color: #222222;
+  font-size: clamp(3.2rem, 7vw, 4.7rem);
+  text-transform: uppercase;
+}
+
+body.home-landing .site-wordmark {
+  position: absolute;
+  left: -420px;
+  top: -126px;
+  margin: 0;
+  color: #202225;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+body.home-landing .hero-rule {
+  width: min(58vw, 730px);
+  height: 12px;
+  margin: 0.85rem auto 0;
+  background: #718594;
+}
+
+body.home-landing .site-main {
+  padding-top: 0;
+}
+
+body.home-landing .panel {
+  padding: 1.75rem 1.65rem 2rem;
+}
+
+body.home-landing .home-panel {
+  grid-template-columns: 430px 1fr;
+  gap: 2.1rem;
+  background: #6f8393;
+  border: 0;
+}
+
+body.home-landing .home-copy h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+body.home-landing .home-copy p {
+  color: #ffffff;
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+body.home-landing .welcome-copy {
+  padding-top: 0.8rem;
+}
+
+body.home-landing .welcome-copy p {
+  max-width: 690px;
+  font-size: 0.98rem;
+}
+
+body.home-landing .welcome-copy p + p {
+  margin-top: 1.35rem;
+}
+
+body.home-landing .home-photo img {
+  max-width: 430px;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  body.home-landing .masthead {
+    min-height: 220px;
+  }
+
+  body.home-landing .masthead-inner {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  body.home-landing .masthead {
+    min-height: 200px;
+  }
+
+  body.home-landing .masthead-inner {
+    min-height: 200px;
+  }
+
+  body.home-landing .site-wordmark {
     position: static;
     margin-bottom: 0.8rem;
   }
 
-  .hero-rule {
+  body.home-landing .hero-rule {
     margin-left: 0;
   }
 }
