@@ -170,10 +170,12 @@ a:hover {
 }
 
 .paper-title {
+  color: #222222;
   font-weight: 700;
 }
 
 .paper-status {
+  color: #444444;
   font-weight: 700;
 }
 
@@ -185,6 +187,12 @@ a:hover {
 
 .research-entry {
   margin-bottom: 1.85rem;
+}
+
+.research-entry p,
+.research-entry span,
+.research-entry em {
+  color: #444444;
 }
 
 .research-entry ul {
