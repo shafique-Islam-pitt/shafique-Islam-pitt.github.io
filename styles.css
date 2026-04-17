@@ -122,17 +122,20 @@ a:hover {
 }
 
 .top-nav a {
-  color: rgba(255, 255, 255, 0.98);
-  font-size: 1.15rem;
+  color: #2b2f33;
+  font-size: 1.05rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 0;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  padding: 0.55rem 0.85rem;
+  text-shadow: none;
+  background: transparent;
 }
 
 .top-nav a:hover,
 .top-nav a.is-active {
   color: #ffffff;
+  background: #222222;
+  text-decoration: none;
 }
 
 .site-main {
