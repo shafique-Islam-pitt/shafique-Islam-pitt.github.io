@@ -280,12 +280,33 @@ a:hover {
 }
 
 @media (max-width: 900px) {
+  .masthead-inner,
+  .page-shell {
+    width: min(100% - 2rem, 1180px);
+  }
+
   .masthead {
     min-height: 230px;
   }
 
   .masthead-inner {
     min-height: 230px;
+  }
+
+  .top-nav {
+    gap: 0.7rem;
+  }
+
+  .top-nav a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .search-shell input {
+    width: 150px;
+  }
+
+  .panel {
+    padding: 1.5rem 1.25rem 1.75rem;
   }
 
   .home-panel {
@@ -295,35 +316,114 @@ a:hover {
   .home-photo img {
     max-width: 100%;
   }
+
+  .cv-download {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
+  .masthead-inner,
+  .page-shell {
+    width: min(100% - 1.25rem, 1180px);
+  }
+
   .masthead {
-    min-height: 190px;
+    min-height: 230px;
   }
 
   .masthead-inner {
-    min-height: 190px;
+    min-height: 230px;
+    padding-top: 0.85rem;
   }
 
   .top-nav {
     position: static;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    gap: 0.55rem;
+    margin-bottom: 0.85rem;
   }
 
   .search-shell {
     position: static;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 0.85rem;
+  }
+
+  .search-shell input {
+    width: 100%;
+    min-width: 0;
   }
 
   .hero-title,
   .hero-title-small {
     position: static;
     transform: none;
-    text-align: left;
+    text-align: center;
+    padding-top: 0.6rem;
+  }
+
+  .masthead h1 {
+    font-size: clamp(2.3rem, 11vw, 3.2rem);
+    line-height: 1.05;
+  }
+
+  .site-main {
     padding-top: 1rem;
+  }
+
+  .panel {
+    padding: 1.25rem 1rem 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+  }
+
+  .research-entry ul {
+    margin-left: 1.1rem;
+  }
+
+  .cv-download {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .masthead {
+    min-height: 250px;
+  }
+
+  .masthead-inner {
+    min-height: 250px;
+  }
+
+  .top-nav a {
+    font-size: 0.98rem;
+    padding: 0.48rem 0.65rem;
+  }
+
+  .search-shell button {
+    padding: 0 11px;
+  }
+
+  .home-copy h2 {
+    font-size: 1.6rem;
+  }
+
+  .home-copy p,
+  .research-entry p,
+  .section-intro,
+  .intro-text p,
+  .research-entry li {
+    font-size: 1rem;
+  }
+
+  .pdf-icon {
+    width: 46px;
+    height: 58px;
+    font-size: 0.85rem;
   }
 }
 
@@ -442,29 +542,97 @@ body.home-landing .home-photo img {
 
 @media (max-width: 900px) {
   body.home-landing .masthead {
-    min-height: 220px;
+    min-height: 240px;
   }
 
   body.home-landing .masthead-inner {
-    min-height: 220px;
+    min-height: 240px;
+  }
+
+  body.home-landing .hero-title {
+    top: 56%;
+  }
+
+  body.home-landing .home-panel {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  body.home-landing .home-photo img {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 640px) {
   body.home-landing .masthead {
-    min-height: 200px;
+    min-height: 260px;
   }
 
   body.home-landing .masthead-inner {
-    min-height: 200px;
+    min-height: 260px;
   }
 
   body.home-landing .site-wordmark {
     position: static;
-    margin-bottom: 0.8rem;
+    left: auto;
+    top: auto;
+    margin-bottom: 0.55rem;
+    font-size: 0.92rem;
+    text-align: center;
+  }
+
+  body.home-landing .top-nav {
+    justify-content: center;
+  }
+
+  body.home-landing .search-shell {
+    width: 100%;
+  }
+
+  body.home-landing .hero-title {
+    top: auto;
+  }
+
+  body.home-landing .masthead h1 {
+    font-size: clamp(2.4rem, 11vw, 3.6rem);
   }
 
   body.home-landing .hero-rule {
-    margin-left: 0;
+    width: min(82vw, 420px);
+    margin: 0.75rem auto 0;
+  }
+
+  body.home-landing .panel {
+    padding: 1.25rem 1rem 1.5rem;
+  }
+
+  body.home-landing .home-panel {
+    gap: 1.1rem;
+  }
+
+  body.home-landing .home-copy h2 {
+    font-size: 2.3rem;
+  }
+
+  body.home-landing .welcome-copy {
+    padding-top: 0;
+  }
+
+  body.home-landing .welcome-copy p {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body.home-landing .masthead {
+    min-height: 280px;
+  }
+
+  body.home-landing .masthead-inner {
+    min-height: 280px;
+  }
+
+  body.home-landing .home-copy h2 {
+    font-size: 2rem;
   }
 }
