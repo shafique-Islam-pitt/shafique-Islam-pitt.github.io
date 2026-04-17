@@ -34,8 +34,8 @@ a:hover {
 .masthead {
   min-height: 305px;
   background:
-    linear-gradient(rgba(16, 41, 73, 0.38), rgba(16, 41, 73, 0.38)),
-    linear-gradient(rgba(201, 162, 39, 0.16), rgba(201, 162, 39, 0.16)),
+    linear-gradient(rgba(10, 36, 74, 0.58), rgba(10, 36, 74, 0.58)),
+    linear-gradient(rgba(211, 168, 44, 0.28), rgba(211, 168, 44, 0.28)),
     url("cover%20Photo.jpeg") center/cover no-repeat;
   border-bottom: 1px solid #e7ecf0;
 }
@@ -331,7 +331,8 @@ body.home-landing .masthead {
   min-height: 300px;
   border-bottom: 0;
   background:
-    linear-gradient(rgba(19, 22, 28, 0.34), rgba(19, 22, 28, 0.34)),
+    linear-gradient(rgba(10, 36, 74, 0.58), rgba(10, 36, 74, 0.58)),
+    linear-gradient(rgba(211, 168, 44, 0.28), rgba(211, 168, 44, 0.28)),
     url("cover%20Photo.jpeg") center/cover no-repeat;
 }
 
