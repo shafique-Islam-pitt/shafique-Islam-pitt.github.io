@@ -248,6 +248,20 @@ a:hover {
   line-height: 1.5;
 }
 
+.paper-abstract {
+  margin: 0.5rem 0 0.6rem;
+}
+
+.paper-abstract strong {
+  color: #222222;
+}
+
+.paper-links {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
 .cv-panel {
   max-width: 1040px;
   padding-top: 0.8rem;
